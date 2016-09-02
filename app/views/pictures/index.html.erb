@@ -1,0 +1,14 @@
+<h1>Picture List</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+  </tr>
+
+  <% @pictures.each do |picture| %>
+    <tr>
+      <td><%= picture.title %></td>
+      <td><%= link_to 'Show', picture_path(picture) %></td>
+    </tr>
+  <% end %>
+</table>
